@@ -82,14 +82,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                   {product.oldPrice.toLocaleString("sr-RS")} RSD
                 </span>
               )}
-              <span className="text-xl font-bold text-emerald-400">
+              <span className="text-xl font-bold text-primary">
                 {product.price.toLocaleString("sr-RS")} RSD
               </span>
             </div>
           </div>
 
           <Button
-            className="w-full mt-3 bg-emerald-400 hover:bg-emerald-500"
+            className="w-full mt-3 bg-primary"
             disabled={!product.inStock}
           >
             {product.inStock ? "Pogledaj detalje" : "Nema na stanju"}

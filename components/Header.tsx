@@ -90,7 +90,7 @@ export default function Header() {
             : "bg-transparent"
         }  fixed top-0 left-0 right-0 z-50 transition-colors`}
       >
-        <nav className="flex items-center justify-between px-8 max-w-[80rem] w-full text-emerald-400 font-bold">
+        <nav className="flex items-center justify-between px-8 max-w-[80rem] w-full font-bold">
           <Link href="/" className=" flex gap-3 items-center">
             <Image
               src={Logo}

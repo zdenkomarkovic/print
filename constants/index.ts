@@ -12,10 +12,6 @@ export const navList = [
     link: "/blog",
   },
   {
-    title: "Poslovna saradnja",
-    link: "/poslovna-saradnja",
-  },
-  {
     title: "Kontakt",
     link: "/kontakt",
   },
