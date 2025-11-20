@@ -15,6 +15,9 @@ import {
   Calendar,
   User,
   ArrowRight,
+  Palette,
+  Shirt,
+  Coffee,
 } from "lucide-react";
 
 // Dynamic rendering
@@ -80,6 +83,121 @@ export default async function Home() {
                 Saznaj više o nama
                 <ArrowRight className="w-5 h-5" />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Offer Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Šta možeš pronaći?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Dizajni koji pričaju priču – dostupni na raznim proizvodima
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* T-shirts */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shirt className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Majice</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Nosi svoju priču. Svaki dizajn je jedinstven i priča svoju
+                priču kroz boje, linije i emocije.
+              </p>
+            </div>
+
+            {/* Mugs */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Coffee className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Šolje</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Svako jutro sa stilom. Kafa ili čaj – uvek lepši uz šolju koja
+                te inspiriše.
+              </p>
+            </div>
+
+            {/* Accessories */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all text-center">
+              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Palette className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">I mnogo više</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Cegeri, torbe, nalepnice, posteri... Konstantno istražujem nove
+                mogućnosti.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href="https://www.zazzle.com/store/designer02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
+            >
+              Istraži kolekciju
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Kako funkcioniše?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Print-on-demand znači da svaki proizvod nastaje specijalno za tebe
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                  1
+                </div>
+                <h3 className="text-xl font-bold mb-3">Izaberi dizajn</h3>
+                <p className="text-gray-600">
+                  Pregledaj kolekciju i pronađi dizajn koji odgovara tvom stilu
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                  2
+                </div>
+                <h3 className="text-xl font-bold mb-3">Poruči proizvod</h3>
+                <p className="text-gray-600">
+                  Odaberi proizvod (majica, šolja...) i personalizuj ako želiš
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                  3
+                </div>
+                <h3 className="text-xl font-bold mb-3">Uživaj u kreaciji</h3>
+                <p className="text-gray-600">
+                  Proizvod se štampa i šalje direktno tebi – jedinstven i tvoj
+                </p>
+              </div>
             </div>
           </div>
         </div>
