@@ -94,12 +94,12 @@ export default function Header() {
           <Link href="/" className=" flex gap-3 items-center">
             <Image
               src={Logo}
-              alt="Aloe Vera Shop"
+              alt="DESIGNER 02 STORE"
               width={80}
               height={80}
               className={`rounded-full `}
             />{" "}
-            <span className="text-2xl">Aloe Vera</span>
+            <span className="text-2xl">DESIGNER 02</span>
           </Link>
           <DesktopNav />
 
@@ -107,11 +107,11 @@ export default function Header() {
             {/* Cart Icon */}
             <button
               onClick={() => setIsCartOpen(true)}
-              className="relative p-2 hover:bg-emerald-50 rounded-full transition-colors"
+              className="relative p-2 hover:bg-primary/10 rounded-full transition-colors"
             >
-              <ShoppingCart className="w-6 h-6 text-emerald-400" />
+              <ShoppingCart className="w-6 h-6 text-primary" />
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-emerald-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                   {totalItems}
                 </span>
               )}

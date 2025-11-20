@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Kontakt",
-  description: "Kontaktirajte nas za sve informacije o Aloe Vera proizvodima",
+  description: "Kontaktirajte DESIGNER 02 STORE - Tu smo da odgovorimo na vaša pitanja i pomognemo vam",
 };
 
 export default function KontaktPage() {

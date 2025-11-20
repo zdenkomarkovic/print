@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Aloe Vera Shop - Prirodni proizvodi za zdravlje i lepotu",
-    template: "%s | Aloe Vera Shop",
+    default: "DESIGNER 02 STORE - Vaša destinacija za jedinstvene dizajnerske proizvode",
+    template: "%s | DESIGNER 02 STORE",
   },
   description:
-    "Otkrijte snagu prirode sa našom premium kolekcijom Aloe Vera proizvoda. 100% prirodni proizvodi za vaše zdravlje, lepotu i dobrobit. Besplatna dostava širom Srbije.",
+    "Otkrijte pažljivo odabrane dizajnerske proizvode koji spajaju funkcionalnost, estetiku i kvalitet. DESIGNER 02 STORE - gde stil susreće kvalitet. Besplatna dostava.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -20,24 +20,22 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   keywords: [
-    "aloe vera",
-    "prirodni proizvodi",
-    "zdravlje",
-    "lepota",
-    "prirodna nega",
-    "aloe vera gel",
-    "suplementi",
-    "kozmetika",
-    "med",
-    "propolis",
-    "natural products",
-    "wellness",
-    "beauty",
-    "skincare",
+    "designer 02",
+    "dizajnerski proizvodi",
+    "online prodavnica",
+    "kvalitetni proizvodi",
+    "ekskluzivni proizvodi",
+    "design store",
+    "designer products",
+    "premium quality",
+    "unique products",
+    "style",
+    "fashion",
+    "lifestyle",
   ],
-  authors: [{ name: "Aloe Vera Shop" }],
-  creator: "Aloe Vera Shop",
-  publisher: "Aloe Vera Shop",
+  authors: [{ name: "DESIGNER 02 STORE" }],
+  creator: "DESIGNER 02 STORE",
+  publisher: "DESIGNER 02 STORE",
   robots: {
     index: true,
     follow: true,
@@ -45,10 +43,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "sr_RS",
-    siteName: "Aloe Vera Shop",
-    title: "Aloe Vera Shop - Prirodni proizvodi za zdravlje i lepotu",
+    siteName: "DESIGNER 02 STORE",
+    title: "DESIGNER 02 STORE - Vaša destinacija za jedinstvene dizajnerske proizvode",
     description:
-      "Otkrijte snagu prirode sa našom premium kolekcijom Aloe Vera proizvoda.",
+      "Otkrijte pažljivo odabrane dizajnerske proizvode koji spajaju funkcionalnost, estetiku i kvalitet.",
   },
 };
 

@@ -15,29 +15,29 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-6">
               <Image
                 src={Logo}
-                alt="Aloe Vera Shop"
+                alt="DESIGNER 02 STORE"
                 width={120}
                 height={120}
                 className="rounded-2xl"
               />
             </Link>
-            <h3 className="text-xl font-bold mb-4">Aloe Vera Shop</h3>
+            <h3 className="text-xl font-bold mb-4">DESIGNER 02 STORE</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Vaš partner za zdravlje i lepotu. 100% prirodni Aloe Vera
-              proizvodi za vašu dobrobit.
+              Vaša destinacija za jedinstvene dizajnerske proizvode.
+              Kvalitet, stil i funkcionalnost na jednom mestu.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4 text-emerald-400">
+            <h4 className="text-lg font-bold mb-4 text-blue-300">
               Brzi linkovi
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
+                  className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                 >
                   Početna
                 </Link>
@@ -45,33 +45,33 @@ export default function Footer() {
               <li>
                 <Link
                   href="/proizvodi"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
+                  className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                 >
-                  Proizvodi
+                  Prodavnica
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blog"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
+                  href="/o-meni"
+                  className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                 >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/poslovna-saradnja"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
-                >
-                  Poslovna saradnja
+                  O meni
                 </Link>
               </li>
               <li>
                 <Link
                   href="/kontakt"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
+                  className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                 >
                   Kontakt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
+                >
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -79,15 +79,15 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold mb-4 text-emerald-400">Kontakt</h4>
+            <h4 className="text-lg font-bold mb-4 text-blue-300">Kontakt</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-blue-300 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-xs mb-1">Email</p>
                   <a
                     href="mailto:sijaj.sa.tijanam@gmail.com"
-                    className="text-gray-300 hover:text-emerald-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                   >
                     sijaj.sa.tijanam@gmail.com
                   </a>
@@ -124,13 +124,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Working Hours */}
+          {/* Promo */}
           <div>
-            <div className="mt-6 p-4 bg-emerald-600/20 border border-emerald-600/30 rounded-lg">
-              <p className="text-emerald-400 font-semibold text-sm mb-1">
-                Besplatna dostava i 5% popusta!
+            <div className="mt-6 p-4 bg-blue-500/20 border border-blue-400/30 rounded-lg">
+              <p className="text-blue-300 font-semibold text-sm mb-1">
+                Besplatna dostava!
               </p>
-              <p className="text-gray-300 text-xs">Za porudžbine preko 70€</p>
+              <p className="text-gray-300 text-xs">Za sve porudžbine</p>
             </div>
           </div>
         </div>
@@ -139,17 +139,17 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>
-              &copy; {new Date().getFullYear()} Aloe Vera Shop. Sva prava
+              &copy; {new Date().getFullYear()} DESIGNER 02 STORE. Sva prava
               zadržana.
             </p>
             <a
               href="https://www.manikamwebsolutions.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-emerald-400 transition-colors"
+              className="hover:text-blue-300 transition-colors"
             >
               Izrada sajta:{" "}
-              <span className="font-bold text-emerald-400">
+              <span className="font-bold text-blue-300">
                 ManikamWebSolutions
               </span>
             </a>
