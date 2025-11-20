@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/CategoryCard";
+import Hero3Images from "@/components/Hero3Images";
 import {
   getAllCategories,
   getFeaturedProducts,
@@ -32,29 +33,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-50">
-        <div className="container mx-auto px-4 md:px-8 pt-32 pb-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Tvoj stil. Tvoj izraz.
-              <br />
-              <span className="text-primary">Na svakom proizvodu.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-              Unikatni printovi na majicama, šoljama, cegerima i još mnogo toga –
-              kreirano s ljubavlju, štampano po porudžbini.
-            </p>
-            <a
-              href="https://www.zazzle.com/store/designer02"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-primary text-white font-bold px-10 py-5 rounded-full hover:bg-primary/90 transition-all text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              Poseti moju prodavnicu
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero3Images />
 
       {/* About Brand Section */}
       <section className="py-20 bg-white">

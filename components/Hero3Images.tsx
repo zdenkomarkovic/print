@@ -40,51 +40,58 @@ const Hero3Images = () => {
           <CarouselItem>
             <Image
               src={Hero1}
-              alt="Moderna dnevna soba"
+              alt="DESIGNER 02 Proizvod 1"
               className="w-full h-[100dvh] object-cover"
             />
           </CarouselItem>
           <CarouselItem>
             <Image
               src={Hero2}
-              alt="Elegantna dnevna soba"
+              alt="DESIGNER 02 Proizvod 2"
               className="w-full h-[100dvh] object-cover"
             />
           </CarouselItem>
           <CarouselItem>
             <Image
               src={Hero3}
-              alt="Luksuzni plakar"
+              alt="DESIGNER 02 Proizvod 3"
               className="w-full h-[100dvh] object-cover"
             />
           </CarouselItem>
         </CarouselContent>
       </Carousel>
       <div className="relative flex flex-col gap-6 w-full items-center justify-center text-white z-[1] text-center">
-        <h1 className="text-primary md:text-[4rem] text-xl font-bold max-w-[900px] leading-[1.2] px-4">
-          NASLOV
+        <h1 className="text-white md:text-[4rem] text-4xl font-bold max-w-[900px] leading-[1.2] px-4">
+          Tvoj stil. Tvoj izraz.
+          <br />
+          <span className="text-blue-300">Na svakom proizvodu.</span>
         </h1>
-        <h2 className="text-background font-medium md:text-[1.5rem] text-md max-w-[800px] px-4">
-          PRATECI TEXT
+        <h2 className="text-gray-100 font-medium md:text-[1.5rem] text-lg max-w-[800px] px-4">
+          Unikatni printovi na majicama, šoljama, cegerima i još mnogo toga –
+          kreirano s ljubavlju, štampano po porudžbini.
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
           <Link href="/proizvodi">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-primary text-foreground px-4 py-2 md:px-8 md:py-3 rounded-lg font-medium"
+              className="flex items-center gap-2 bg-white text-primary px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl"
             >
-              Istražite naše proizvode
-              <ArrowRightIcon className="w-[18px]" />
+              Pogledaj moje proizvode ovde
+              <ArrowRightIcon className="w-5 h-5" />
             </motion.button>
           </Link>
-          <a href="tel:+3816000000">
+          <a
+            href="https://www.zazzle.com/store/designer02"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-background border-[1px] rounded-lg px-4 md:px-8 md:py-3 py-2 font-medium"
+              className="bg-primary/90 backdrop-blur-sm border-white border-2 rounded-full px-6 md:px-8 md:py-4 py-3 font-bold text-lg text-white shadow-lg hover:shadow-xl hover:bg-primary"
             >
-              Pozovite odmah
+              Poseti moju prodavnicu na Zazzle
             </motion.button>
           </a>
         </div>
