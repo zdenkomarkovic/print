@@ -33,17 +33,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <div className="container mx-auto px-4 md:px-8">
         {/* Breadcrumbs */}
         <nav className="mb-8 text-sm text-gray-600">
-          <Link href="/" className="hover:text-emerald-400">
+          <Link href="/" className="hover:text-primary">
             Početna
           </Link>
           <span className="mx-2">/</span>
-          <Link href="/proizvodi" className="hover:text-emerald-400">
-            Proizvodi
+          <Link href="/proizvodi" className="hover:text-primary">
+            Prodavnica
           </Link>
           <span className="mx-2">/</span>
           <Link
             href={`/proizvodi?kategorija=${product.category.slug.current}`}
-            className="hover:text-emerald-400"
+            className="hover:text-primary"
           >
             {product.category.name}
           </Link>
@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <div className="mb-4">
               <Link
                 href={`/proizvodi?kategorija=${product.category.slug.current}`}
-                className="text-emerald-400 hover:text-emerald-500 font-medium text-sm"
+                className="text-primary/70 hover:text-primary font-medium text-sm"
               >
                 {product.category.name}
               </Link>
@@ -107,7 +107,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   </span>
                 </div>
               )}
-              <div className="text-4xl font-bold text-emerald-400">
+              <div className="text-4xl font-bold text-primary">
                 {product.price.toLocaleString("sr-RS")} RSD
               </div>
             </div>
@@ -115,9 +115,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {/* Stock Status */}
             <div className="mb-6">
               {product.inStock ? (
-                <div className="flex items-center gap-2 text-emerald-400">
+                <div className="flex items-center gap-2 text-green-600">
                   <Check className="w-5 h-5" />
-                  <span className="font-semibold">Dostupno na stanju</span>
+                  <span className="font-semibold">Dostupno</span>
                 </div>
               ) : (
                 <div className="flex items-center gap-2 text-red-600">
@@ -136,60 +136,42 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             {/* CTA Buttons */}
             <div className="space-y-4 mb-8">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h3 className="font-bold text-gray-900 mb-4 text-lg">
-                  Naručite ovaj proizvod:
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
+                <h3 className="font-bold text-primary mb-4 text-lg">
+                  Kontaktirajte nas za porudžbinu:
                 </h3>
 
                 {/* Email Button */}
                 <a
-                  href="mailto:sijaj.sa.tijanam@gmail.com"
-                  className="flex items-center gap-4 p-4 bg-white rounded-lg border-2 border-emerald-200 hover:border-emerald-600 hover:bg-emerald-50 transition-all mb-3"
+                  href="mailto:danielcreator2025@outlook.com"
+                  className="flex items-center gap-4 p-4 bg-white rounded-lg border-2 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all mb-3"
                 >
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-grow text-left">
                     <div className="font-semibold text-gray-900">
-                      Pošaljite Email
+                      Email
                     </div>
                     <div className="text-sm text-gray-600">
-                      sijaj.sa.tijanam@gmail.com
+                      danielcreator2025@outlook.com
                     </div>
                   </div>
                 </a>
 
-                {/* WhatsApp Button */}
+                {/* Phone Button */}
                 <a
-                  href="https://wa.me/381645215667"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-white rounded-lg border-2 border-green-200 hover:border-green-600 hover:bg-green-50 transition-all mb-3"
+                  href="tel:+381637586420"
+                  className="flex items-center gap-4 p-4 bg-white rounded-lg border-2 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all"
                 >
-                  <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <MessageCircle className="w-6 h-6 text-primary" />
                   </div>
                   <div className="flex-grow text-left">
                     <div className="font-semibold text-gray-900">
-                      WhatsApp (Srbija)
+                      Telefon
                     </div>
-                    <div className="text-sm text-gray-600">064/52-15-667</div>
-                  </div>
-                </a>
-
-                {/* Viber Button */}
-                <a
-                  href="viber://chat?number=38765311833"
-                  className="flex items-center gap-4 p-4 bg-white rounded-lg border-2 border-purple-200 hover:border-purple-600 hover:bg-purple-50 transition-all"
-                >
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div className="flex-grow text-left">
-                    <div className="font-semibold text-gray-900">
-                      Viber (BiH)
-                    </div>
-                    <div className="text-sm text-gray-600">065/311-833</div>
+                    <div className="text-sm text-gray-600">+381 63 758 6420</div>
                   </div>
                 </a>
               </div>
@@ -214,9 +196,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {/* Sidebar Info */}
           <div className="space-y-6">
             {product.ingredients && (
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">
-                  Sastojci
+                  Materijali
                 </h3>
                 <p className="text-gray-700 whitespace-pre-line">
                   {product.ingredients}
@@ -225,9 +207,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
 
             {product.usage && (
-              <div className="bg-gray-50 rounded-xl p-6">
+              <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">
-                  Način upotrebe
+                  Detalji
                 </h3>
                 <p className="text-gray-700 whitespace-pre-line">
                   {product.usage}

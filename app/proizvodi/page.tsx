@@ -61,11 +61,10 @@ function ProizvodiContent() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Naši Proizvodi
+            Prodavnica
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Istražite našu kolekciju prirodnih Aloe Vera proizvoda za zdravlje i
-            lepotu
+            Pronađi savršen proizvod sa unikatnim dizajnom koji odražava tvoj stil
           </p>
         </div>
 
@@ -77,8 +76,8 @@ function ProizvodiContent() {
               onClick={() => setSelectedCategory(null)}
               className={
                 selectedCategory === null
-                  ? "bg-emerald-400 hover:bg-emerald-500"
-                  : "border-emerald-400 text-emerald-400 hover:bg-emerald-50"
+                  ? "bg-primary hover:bg-primary/90"
+                  : "border-primary text-primary hover:bg-primary/5"
               }
             >
               Sve kategorije
@@ -94,8 +93,8 @@ function ProizvodiContent() {
                 onClick={() => setSelectedCategory(category.slug.current)}
                 className={
                   selectedCategory === category.slug.current
-                    ? "bg-emerald-600 hover:bg-emerald-700"
-                    : "border-emerald-600 text-emerald-600 hover:bg-emerald-50"
+                    ? "bg-primary hover:bg-primary/90"
+                    : "border-primary text-primary hover:bg-primary/5"
                 }
               >
                 {category.name}
@@ -107,7 +106,7 @@ function ProizvodiContent() {
         {/* Products Grid */}
         {loading ? (
           <div className="flex justify-center items-center py-20">
-            <Loader2 className="w-12 h-12 animate-spin text-emerald-600" />
+            <Loader2 className="w-12 h-12 animate-spin text-primary" />
           </div>
         ) : products.length > 0 ? (
           <>
@@ -130,7 +129,7 @@ function ProizvodiContent() {
             </p>
             <Button
               onClick={() => setSelectedCategory(null)}
-              className="bg-emerald-600 hover:bg-emerald-700"
+              className="bg-primary hover:bg-primary/90"
             >
               Pogledaj sve proizvode
             </Button>
@@ -147,7 +146,7 @@ export default function ProizvodiPage() {
       fallback={
         <main className="min-h-screen pt-32 pb-20">
           <div className="container mx-auto px-4 md:px-8 flex justify-center items-center py-20">
-            <Loader2 className="w-12 h-12 animate-spin text-emerald-600" />
+            <Loader2 className="w-12 h-12 animate-spin text-primary" />
           </div>
         </main>
       }
