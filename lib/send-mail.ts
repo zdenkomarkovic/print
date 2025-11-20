@@ -33,7 +33,7 @@ export async function sendMail({
 }) {
   try {
     const info = await transporter.sendMail({
-      from: `"Aloe Vera Shop" <${SMTP_USER}>`, // Šalje sa autentifikovanog naloga
+      from: `"DESIGNER 02 STORE" <${SMTP_USER}>`, // Šalje sa autentifikovanog naloga
       replyTo: email, // Reply-To je email pošiljaoca (korisnika ili sistema)
       to: sendTo || CONTACT_EMAIL,
       subject: subject,

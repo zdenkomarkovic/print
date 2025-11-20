@@ -1,10 +1,10 @@
 {
-  "name": "Aloe Vera Shop",
-  "short_name": "Aloe Vera proizvodi",
+  "name": "DESIGNER 02 STORE",
+  "short_name": "DESIGNER 02",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#1a3a52",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

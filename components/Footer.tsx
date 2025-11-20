@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/android-chrome-192x192.png";
-import { Mail, Instagram, Facebook } from "lucide-react";
+import { Mail, Instagram, Facebook, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -90,6 +90,19 @@ export default function Footer() {
                     className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
                   >
                     danielcreator2025@outlook.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-blue-300 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-400 text-xs mb-1">Telefon</p>
+                  <a
+                    href="tel:+381637586420"
+                    className="text-gray-300 hover:text-blue-300 transition-colors text-sm"
+                  >
+                    +381 63 758 6420
                   </a>
                 </div>
               </div>

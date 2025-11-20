@@ -80,16 +80,16 @@ export async function POST(request: Request) {
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Nova porudžbina - Aloe Vera Shop</title>
+          <title>Nova porudžbina - DESIGNER 02 STORE</title>
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
-            <h1 style="margin: 0; font-size: 28px;">🌿 Nova Porudžbina!</h1>
-            <p style="margin: 10px 0 0 0; opacity: 0.9;">Aloe Vera Shop</p>
+          <div style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
+            <h1 style="margin: 0; font-size: 28px;">🎨 Nova Porudžbina!</h1>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">DESIGNER 02 STORE</p>
           </div>
 
           <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
-            <h2 style="color: #10b981; margin-top: 0;">Informacije o kupcu</h2>
+            <h2 style="color: #1a3a52; margin-top: 0;">Informacije o kupcu</h2>
             <table style="width: 100%; margin-bottom: 20px;">
               <tr>
                 <td style="padding: 8px 0; color: #6b7280; width: 120px;"><strong>Ime:</strong></td>
@@ -97,11 +97,11 @@ export async function POST(request: Request) {
               </tr>
               <tr>
                 <td style="padding: 8px 0; color: #6b7280;"><strong>Email:</strong></td>
-                <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #10b981;">${email}</a></td>
+                <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #1a3a52;">${email}</a></td>
               </tr>
               <tr>
                 <td style="padding: 8px 0; color: #6b7280;"><strong>Telefon:</strong></td>
-                <td style="padding: 8px 0;"><a href="tel:${phone}" style="color: #10b981;">${phone}</a></td>
+                <td style="padding: 8px 0;"><a href="tel:${phone}" style="color: #1a3a52;">${phone}</a></td>
               </tr>
               <tr>
                 <td style="padding: 8px 0; color: #6b7280;"><strong>Adresa:</strong></td>
@@ -123,10 +123,10 @@ export async function POST(request: Request) {
               }
             </table>
 
-            <h2 style="color: #10b981; margin-top: 30px;">Poručeni proizvodi</h2>
+            <h2 style="color: #1a3a52; margin-top: 30px;">Poručeni proizvodi</h2>
             <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
               <thead>
-                <tr style="background: #10b981; color: white;">
+                <tr style="background: #1a3a52; color: white;">
                   <th style="padding: 12px; text-align: left;">Proizvod</th>
                   <th style="padding: 12px; text-align: center;">Količina</th>
                   <th style="padding: 12px; text-align: right;">Cena</th>
@@ -137,22 +137,22 @@ export async function POST(request: Request) {
                 ${itemsHtml}
                 <tr style="background: #f3f4f6; font-weight: bold;">
                   <td colspan="3" style="padding: 16px; text-align: right;">UKUPNO:</td>
-                  <td style="padding: 16px; text-align: right; color: #10b981; font-size: 18px;">
+                  <td style="padding: 16px; text-align: right; color: #1a3a52; font-size: 18px;">
                     ${totalPrice.toLocaleString("sr-RS")} RSD
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <div style="margin-top: 30px; padding: 20px; background: #ecfdf5; border-left: 4px solid #10b981; border-radius: 4px;">
-              <p style="margin: 0; color: #065f46;">
+            <div style="margin-top: 30px; padding: 20px; background: #e3f2fd; border-left: 4px solid #1a3a52; border-radius: 4px;">
+              <p style="margin: 0; color: #0d47a1;">
                 <strong>💡 Napomena:</strong> Ovo je automatski generisan email. Kontaktirajte kupca što pre da potvrdite porudžbinu.
               </p>
             </div>
           </div>
 
           <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 14px;">
-            <p>© ${new Date().getFullYear()} Aloe Vera Shop. Sva prava zadržana.</p>
+            <p>© ${new Date().getFullYear()} DESIGNER 02 STORE. Sva prava zadržana.</p>
           </div>
         </body>
       </html>
@@ -178,23 +178,23 @@ export async function POST(request: Request) {
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Potvrda porudžbine - Aloe Vera Shop</title>
+          <title>Potvrda porudžbine - DESIGNER 02 STORE</title>
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
+          <div style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
             <h1 style="margin: 0; font-size: 28px;">Hvala na porudžbini! 🎉</h1>
-            <p style="margin: 10px 0 0 0; opacity: 0.9;">Aloe Vera Shop</p>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">DESIGNER 02 STORE</p>
           </div>
 
           <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
             <p style="font-size: 16px; margin-top: 0;">Poštovani/a <strong>${name}</strong>,</p>
 
-            <p>Hvala vam što ste poručili iz našeg Aloe Vera Shop-a! Vaša porudžbina je uspešno primljena i biće obrađena u najkraćem roku.</p>
+            <p>Hvala vam što ste poručili iz DESIGNER 02 STORE! Vaša porudžbina je uspešno primljena i biće obrađena u najkraćem roku.</p>
 
-            <h2 style="color: #10b981; margin-top: 30px;">Detalji porudžbine</h2>
+            <h2 style="color: #1a3a52; margin-top: 30px;">Detalji porudžbine</h2>
             <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
               <thead>
-                <tr style="background: #10b981; color: white;">
+                <tr style="background: #1a3a52; color: white;">
                   <th style="padding: 12px; text-align: left;">Proizvod</th>
                   <th style="padding: 12px; text-align: center;">Količina</th>
                   <th style="padding: 12px; text-align: right;">Ukupno</th>
@@ -221,16 +221,16 @@ export async function POST(request: Request) {
                   .join("")}
                 <tr style="background: #f3f4f6; font-weight: bold;">
                   <td colspan="2" style="padding: 16px; text-align: right;">UKUPNO:</td>
-                  <td style="padding: 16px; text-align: right; color: #10b981; font-size: 18px;">
+                  <td style="padding: 16px; text-align: right; color: #1a3a52; font-size: 18px;">
                     ${totalPrice.toLocaleString("sr-RS")} RSD
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <div style="margin-top: 30px; padding: 20px; background: #ecfdf5; border-left: 4px solid #10b981; border-radius: 4px;">
-              <h3 style="margin-top: 0; color: #065f46;">Šta sledi?</h3>
-              <ul style="margin: 10px 0; padding-left: 20px; color: #065f46;">
+            <div style="margin-top: 30px; padding: 20px; background: #e3f2fd; border-left: 4px solid #1a3a52; border-radius: 4px;">
+              <h3 style="margin-top: 0; color: #0d47a1;">Šta sledi?</h3>
+              <ul style="margin: 10px 0; padding-left: 20px; color: #0d47a1;">
                 <li>Kontaktiraćemo vas u roku od 24h radi potvrde</li>
                 <li>Plaćanje se vrši pouzećem pri preuzimanju</li>
                 <li>Besplatna dostava za sve porudžbine</li>
@@ -239,14 +239,13 @@ export async function POST(request: Request) {
 
             <p style="margin-top: 30px;">Ako imate bilo kakvih pitanja, slobodno nas kontaktirajte:</p>
             <ul style="list-style: none; padding: 0;">
-              <li>📧 Email: <a href="mailto:${STORE_EMAIL}" style="color: #10b981;">${STORE_EMAIL}</a></li>
-              <li>📱 WhatsApp (Srbija): <a href="https://wa.me/381645215667" style="color: #10b981;">064/52-15-667</a></li>
-              <li>📱 Viber (BiH): 065/311-833</li>
+              <li>📧 Email: <a href="mailto:${STORE_EMAIL}" style="color: #1a3a52;">${STORE_EMAIL}</a></li>
+              <li>📱 Telefon: <a href="tel:+381637586420" style="color: #1a3a52;">+381 63 758 6420</a></li>
             </ul>
           </div>
 
           <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 14px;">
-            <p>© ${new Date().getFullYear()} Aloe Vera Shop. Sva prava zadržana.</p>
+            <p>© ${new Date().getFullYear()} DESIGNER 02 STORE. Sva prava zadržana.</p>
           </div>
         </body>
       </html>
@@ -255,7 +254,7 @@ export async function POST(request: Request) {
     const customerEmailResult = await sendMail({
       email: STORE_EMAIL, // Reply-To je email prodavnice da kupac može odgovoriti
       sendTo: email,
-      subject: "Potvrda porudžbine - Aloe Vera Shop",
+      subject: "Potvrda porudžbine - DESIGNER 02 STORE",
       text: `Hvala na porudžbini! Vaša porudžbina je uspešno primljena. Ukupno: ${totalPrice} RSD. Kontaktiraćemo vas u roku od 24h.`,
       html: customerEmailHtml,
     });

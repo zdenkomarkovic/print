@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { Mail, Instagram, Facebook } from "lucide-react";
+import { Mail, Instagram, Facebook, Phone } from "lucide-react";
 
 export const metadata = {
   title: "Kontakt",
@@ -39,6 +39,22 @@ export default function KontaktPage() {
                     className="text-gray-600 hover:text-primary transition-colors"
                   >
                     danielcreator2025@outlook.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Telefon</h3>
+                  <a
+                    href="tel:+381637586420"
+                    className="text-gray-600 hover:text-primary transition-colors"
+                  >
+                    +381 63 758 6420
                   </a>
                 </div>
               </div>
