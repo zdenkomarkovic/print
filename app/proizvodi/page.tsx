@@ -58,16 +58,6 @@ function ProizvodiContent() {
   return (
     <main className="min-h-screen pt-32 pb-20">
       <div className="container mx-auto px-4 md:px-8">
-        {/* Header */}
-        <div className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Prodavnica
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pronađi savršen proizvod sa unikatnim dizajnom koji odražava tvoj stil
-          </p>
-        </div>
-
         {/* Category Filter */}
         <div className="mb-12">
           <div className="flex flex-wrap justify-center gap-3">

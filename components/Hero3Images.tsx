@@ -10,7 +10,7 @@ import Fade from "embla-carousel-fade";
 import Autoplay from "embla-carousel-autoplay";
 
 import Hero1 from "../public/hero.jpg";
-import Hero2 from "../public/hero1.jpg";
+import Hero2 from "../public/hero1.png";
 import Hero3 from "../public/hero2.jpg";
 
 import Image from "next/image";
@@ -35,7 +35,7 @@ const Hero3Images = () => {
           Fade(),
         ]}
       >
-        <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-[1]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-[1]" />
         <CarouselContent>
           <CarouselItem>
             <Image

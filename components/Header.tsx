@@ -90,7 +90,7 @@ export default function Header() {
             : "bg-transparent"
         }  fixed top-0 left-0 right-0 z-50 transition-colors`}
       >
-        <nav className="flex items-center justify-between px-8 max-w-[80rem] w-full font-bold">
+        <nav className="flex items-center justify-between px-8 py-1 max-w-[80rem] w-full font-bold">
           <Link href="/" className=" flex gap-3 items-center">
             <Image
               src={Logo}
@@ -99,7 +99,7 @@ export default function Header() {
               height={80}
               className={`rounded-full `}
             />{" "}
-            <span className="text-2xl">DESIGNER 02</span>
+            <span className="text-2xl">DESIGNER 02 STORE</span>
           </Link>
           <DesktopNav />
 
