@@ -89,26 +89,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-emerald-600 hover:prose-a:text-emerald-700 prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700">
           <PortableText value={post.body} components={portableTextComponents} />
         </div>
-
-        {/* Footer */}
-        <footer className="mt-16 pt-8 border-t">
-          <div className="bg-gray-200 rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Zainteresovani ste za naše proizvode?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Kontaktirajte nas i saznajte više o našoj ponudi Aloe Vera
-              proizvoda
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-emerald-400 hover:bg-emerald-500"
-            >
-              <Link href="/kontakt">Kontaktirajte nas</Link>
-            </Button>
-          </div>
-        </footer>
       </article>
     </main>
   );
