@@ -21,10 +21,12 @@ export default function Footer() {
                 className="rounded-2xl"
               />
             </Link>
-            <h3 className="text-xl font-bold mb-4">DESIGNER 02 STORE</h3>
+            <h3 className="text-xl font-bold mb-4 text-gray-200">
+              DESIGNER 02 STORE
+            </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Unikatni printovi na svakodnevnim predmetima –
-              kreirano s ljubavlju, štampano po porudžbini.
+              Unikatni printovi na svakodnevnim predmetima – kreirano s
+              ljubavlju, štampano po porudžbini.
             </p>
           </div>
 
@@ -133,9 +135,11 @@ export default function Footer() {
           <div>
             <div className="mt-6 p-4 bg-blue-500/20 border border-blue-400/30 rounded-lg">
               <p className="text-blue-300 font-semibold text-sm mb-1">
-                🎨 Novi dizajni uskoro!
+                Novi dizajni uskoro!
               </p>
-              <p className="text-gray-300 text-xs">Konstantno kreiram nove proizvode</p>
+              <p className="text-gray-300 text-xs">
+                Konstantno kreiram nove proizvode
+              </p>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import Image from "next/image";
 import { Sparkles, Heart, Palette, Lightbulb } from "lucide-react";
 
 export const metadata = {
   title: "O meni",
-  description: "Upoznajte Daniela - kreatora koji dizajnom daje život svakodnevnim predmetima",
+  description:
+    "Upoznajte Daniela - kreatora koji dizajnom daje život svakodnevnim predmetima",
 };
 
 export default function OMeniPage() {
@@ -25,18 +25,19 @@ export default function OMeniPage() {
         <div className="max-w-4xl mx-auto mb-20">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Moj brend je nastao iz želje da spojim <strong>umetnost i funkcionalnost</strong> –
-              da svaki proizvod koji koristiš bude i vizuelno inspirativan.
+              Moj brend je nastao iz želje da spojim{" "}
+              <strong>umetnost i funkcionalnost</strong> – da svaki proizvod
+              koji koristiš bude i vizuelno inspirativan.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Verujem da svaki predmet može da nosi priču. Bilo da je to
-              šolja za jutarnju kafu, majica koja odražava tvoj stil, ili ceger
-              koji te prati na putovanjima – svaki proizvod ima potencijal da
-              bude više od onoga što jeste.
+              Verujem da svaki predmet može da nosi priču. Bilo da je to šolja
+              za jutarnju kafu, majica koja odražava tvoj stil, ili ceger koji
+              te prati na putovanjima – svaki proizvod ima potencijal da bude
+              više od onoga što jeste.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Moji dizajni su inspirisani svakodnevnim trenucima, emocijama
-              i idejama koje pokreću. Svaki print, svaka boja, svaki detalj –
+              Moji dizajni su inspirisani svakodnevnim trenucima, emocijama i
+              idejama koje pokreću. Svaki print, svaka boja, svaki detalj –
               kreiran je s ljubavlju i pažnjom.
             </p>
           </div>
@@ -44,9 +45,7 @@ export default function OMeniPage() {
 
         {/* Values Section */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Moj pristup
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Moj pristup</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -76,8 +75,8 @@ export default function OMeniPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Inspiracija</h3>
               <p className="text-gray-600">
-                Dizajni inspirisani svakodnevnim trenucima, prirodom i
-                emocijama koje nas okružuju.
+                Dizajni inspirisani svakodnevnim trenucima, prirodom i emocijama
+                koje nas okružuju.
               </p>
             </div>
 
@@ -96,9 +95,7 @@ export default function OMeniPage() {
 
         {/* What We Offer Section */}
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Šta kreiram?
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Šta kreiram?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
@@ -107,12 +104,10 @@ export default function OMeniPage() {
                 </div>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-2">
-                  Unikatne majice
-                </h3>
+                <h3 className="font-bold text-lg mb-2">Unikatne majice</h3>
                 <p className="text-gray-600">
-                  Svaki print priča priču – nosi svoje emocije i stil
-                  direktno na sebi.
+                  Svaki print priča priču – nosi svoje emocije i stil direktno
+                  na sebi.
                 </p>
               </div>
             </div>
@@ -175,7 +170,7 @@ export default function OMeniPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-primary font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-colors text-lg"
           >
-            Poseti moju prodavnicu
+            Poseti moju prodavnicu na Zazzle
           </a>
         </div>
       </div>

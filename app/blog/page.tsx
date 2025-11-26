@@ -45,12 +45,8 @@ export default function BlogPage() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl text-primary font-bold mb-4">
-            Aloe Vera Blog
+            Blog
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Saznajte više o Aloe Veri, njenim dobrobiti i kako da je koristite
-            za bolji život i zdravlje
-          </p>
         </div>
 
         {/* Blog Posts */}
@@ -139,7 +135,7 @@ export default function BlogPage() {
             </p>
             <Link
               href="/"
-              className="text-emerald-400 hover:text-emerald-500 font-semibold"
+              className="text-primary hover:text-primary/20 font-semibold"
             >
               Vrati se na početnu
             </Link>

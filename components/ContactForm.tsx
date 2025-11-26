@@ -53,7 +53,7 @@ export default function ContactForm() {
     <div className="">
       <Form {...form}>
         <form
-          className="p-8 bg-white shadow-xl rounded-2xl border border-emerald-100"
+          className="p-8 bg-white shadow-xl rounded-2xl border border-primary/20"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           <div className="flex flex-col gap-6">
@@ -105,7 +105,7 @@ export default function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="lg:text-xl  ">Vasa poruka:</FormLabel>
+                  <FormLabel className="lg:text-xl  ">Vaša poruka:</FormLabel>
                   <FormControl>
                     <Textarea
                       {...field}
@@ -119,7 +119,7 @@ export default function ContactForm() {
             />
             <Button
               disabled={isLoading}
-              className="bg-emerald-400 hover:bg-emerald-500 text-white transition-colors w-full py-6 text-lg font-semibold"
+              className="bg-primary hover:bg-primary/80 text-white transition-colors w-full py-6 text-lg font-semibold"
               type="submit"
             >
               {isLoading ? "Šalje se..." : "Pošalji poruku"}

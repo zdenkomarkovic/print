@@ -15,7 +15,17 @@ interface CartItem {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, phone, address, city, postalCode, notes, items, totalPrice } = body as {
+    const {
+      name,
+      email,
+      phone,
+      address,
+      city,
+      postalCode,
+      notes,
+      items,
+      totalPrice,
+    } = body as {
       name: string;
       email: string;
       phone: string;
@@ -84,7 +94,7 @@ export async function POST(request: Request) {
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
-            <h1 style="margin: 0; font-size: 28px;">🎨 Nova Porudžbina!</h1>
+            <h1 style="margin: 0; font-size: 28px;">Nova Porudžbina!</h1>
             <p style="margin: 10px 0 0 0; opacity: 0.9;">DESIGNER 02 STORE</p>
           </div>
 
@@ -146,7 +156,7 @@ export async function POST(request: Request) {
 
             <div style="margin-top: 30px; padding: 20px; background: #e3f2fd; border-left: 4px solid #1a3a52; border-radius: 4px;">
               <p style="margin: 0; color: #0d47a1;">
-                <strong>💡 Napomena:</strong> Ovo je automatski generisan email. Kontaktirajte kupca što pre da potvrdite porudžbinu.
+                <strong>Napomena:</strong> Ovo je automatski generisan email. Kontaktirajte kupca što pre da potvrdite porudžbinu.
               </p>
             </div>
           </div>
@@ -182,7 +192,7 @@ export async function POST(request: Request) {
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
-            <h1 style="margin: 0; font-size: 28px;">Hvala na porudžbini! 🎉</h1>
+            <h1 style="margin: 0; font-size: 28px;">Hvala na porudžbini!</h1>
             <p style="margin: 10px 0 0 0; opacity: 0.9;">DESIGNER 02 STORE</p>
           </div>
 
@@ -233,7 +243,7 @@ export async function POST(request: Request) {
               <ul style="margin: 10px 0; padding-left: 20px; color: #0d47a1;">
                 <li>Kontaktiraćemo vas u roku od 24h radi potvrde</li>
                 <li>Plaćanje se vrši pouzećem pri preuzimanju</li>
-                <li>Besplatna dostava za sve porudžbine</li>
+             
               </ul>
             </div>
 

@@ -12,7 +12,10 @@ interface AddToCartButtonProps {
   quantity?: number;
 }
 
-export default function AddToCartButton({ product, quantity = 1 }: AddToCartButtonProps) {
+export default function AddToCartButton({
+  product,
+  quantity = 1,
+}: AddToCartButtonProps) {
   const { addItem } = useCart();
   const { toast } = useToast();
   const [isAdded, setIsAdded] = useState(false);
@@ -33,7 +36,7 @@ export default function AddToCartButton({ product, quantity = 1 }: AddToCartButt
     <Button
       onClick={handleAddToCart}
       size="lg"
-      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-6"
+      className="w-full bg-primary hover:bg-primary/80 text-white text-lg py-6"
     >
       {isAdded ? (
         <>

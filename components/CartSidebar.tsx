@@ -13,7 +13,8 @@ interface CartSidebarProps {
 }
 
 export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
-  const { items, removeItem, updateQuantity, totalItems, totalPrice } = useCart();
+  const { items, removeItem, updateQuantity, totalItems, totalPrice } =
+    useCart();
 
   return (
     <>
@@ -88,7 +89,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                         {item.volume && (
                           <p className="text-sm text-gray-600">{item.volume}</p>
                         )}
-                        <p className="text-emerald-600 font-bold mt-1">
+                        <p className="text-primary first:font-bold mt-1">
                           {item.price.toLocaleString("sr-RS")} RSD
                         </p>
 
@@ -134,7 +135,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
               {/* Total */}
               <div className="flex items-center justify-between text-lg">
                 <span className="font-semibold text-gray-900">Ukupno:</span>
-                <span className="font-bold text-emerald-600 text-xl">
+                <span className="font-bold text-primary text-xl">
                   {totalPrice.toLocaleString("sr-RS")} RSD
                 </span>
               </div>
@@ -142,7 +143,7 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
               {/* Checkout Button */}
               <Button
                 asChild
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                className="w-full bg-primary hover:bg-primary/80 text-white"
                 size="lg"
               >
                 <Link href="/checkout" onClick={onClose}>

@@ -71,7 +71,8 @@ export default function CheckoutPage() {
       console.error("Error submitting order:", error);
       toast({
         title: "Greška",
-        description: "Došlo je do greške pri slanju porudžbine. Pokušajte ponovo.",
+        description:
+          "Došlo je do greške pri slanju porudžbine. Pokušajte ponovo.",
         variant: "destructive",
       });
     } finally {
@@ -91,7 +92,7 @@ export default function CheckoutPage() {
             <p className="text-gray-600 mb-8">
               Dodajte proizvode u korpu da biste nastavili sa naručivanjem.
             </p>
-            <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
+            <Button asChild className="bg-primary hover:bg-primary/80">
               <Link href="/proizvodi">Pregledajte proizvode</Link>
             </Button>
           </div>
@@ -118,7 +119,10 @@ export default function CheckoutPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name */}
                 <div>
-                  <Label htmlFor="name" className="flex items-center gap-2 mb-2">
+                  <Label
+                    htmlFor="name"
+                    className="flex items-center gap-2 mb-2"
+                  >
                     <User className="w-4 h-4" />
                     Ime i prezime *
                   </Label>
@@ -137,7 +141,10 @@ export default function CheckoutPage() {
                 {/* Email and Phone */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="email" className="flex items-center gap-2 mb-2">
+                    <Label
+                      htmlFor="email"
+                      className="flex items-center gap-2 mb-2"
+                    >
                       <Mail className="w-4 h-4" />
                       Email *
                     </Label>
@@ -152,7 +159,10 @@ export default function CheckoutPage() {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="phone" className="flex items-center gap-2 mb-2">
+                    <Label
+                      htmlFor="phone"
+                      className="flex items-center gap-2 mb-2"
+                    >
                       <Phone className="w-4 h-4" />
                       Telefon *
                     </Label>
@@ -170,7 +180,10 @@ export default function CheckoutPage() {
 
                 {/* Address */}
                 <div>
-                  <Label htmlFor="address" className="flex items-center gap-2 mb-2">
+                  <Label
+                    htmlFor="address"
+                    className="flex items-center gap-2 mb-2"
+                  >
                     <MapPin className="w-4 h-4" />
                     Adresa *
                   </Label>
@@ -236,7 +249,7 @@ export default function CheckoutPage() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-6"
+                  className="w-full bg-primary hover:bg-primary/80 text-white text-lg py-6"
                 >
                   {isSubmitting ? (
                     <>
@@ -281,8 +294,9 @@ export default function CheckoutPage() {
                         <p className="text-sm text-gray-600">
                           Količina: {item.quantity}
                         </p>
-                        <p className="text-emerald-600 font-semibold text-sm">
-                          {(item.price * item.quantity).toLocaleString("sr-RS")} RSD
+                        <p className="text-primary font-semibold text-sm">
+                          {(item.price * item.quantity).toLocaleString("sr-RS")}{" "}
+                          RSD
                         </p>
                       </div>
                     </div>
@@ -295,25 +309,17 @@ export default function CheckoutPage() {
                   <span>Ukupno proizvoda:</span>
                   <span>{totalPrice.toLocaleString("sr-RS")} RSD</span>
                 </div>
-                <div className="flex justify-between text-gray-600">
-                  <span>Dostava:</span>
-                  <span className="text-emerald-600 font-semibold">
-                    Besplatna
-                  </span>
-                </div>
+
                 <div className="border-t pt-2 flex justify-between text-xl font-bold text-gray-900">
                   <span>Ukupno:</span>
-                  <span className="text-emerald-600">
+                  <span className="text-primary">
                     {totalPrice.toLocaleString("sr-RS")} RSD
                   </span>
                 </div>
               </div>
 
               <div className="mt-6 p-4 bg-emerald-50 rounded-lg">
-                <p className="text-sm text-emerald-800">
-                  ✓ Besplatna dostava za sve porudžbine
-                </p>
-                <p className="text-sm text-emerald-800 mt-1">
+                <p className="text-sm text-primary mt-1">
                   ✓ Plaćanje pouzećem pri preuzimanju
                 </p>
               </div>

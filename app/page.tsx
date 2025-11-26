@@ -47,11 +47,13 @@ export default async function Home() {
             </div>
             <div className="prose prose-lg max-w-none text-center">
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Mi smo mali kreativni studio koji veruje da svaki predmet može da nosi priču.
+                Mi smo mali kreativni studio koji veruje da svaki predmet može
+                da nosi priču.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Naši dizajni su inspirisani svakodnevnim trenucima, emocijama i idejama koje pokreću.
-                Svaki proizvod je osmišljen da bude više od funkcionalnog – da bude izraz individualnosti i kreativnosti.
+                Naši dizajni su inspirisani svakodnevnim trenucima, emocijama i
+                idejama koje pokreću. Svaki proizvod je osmišljen da bude više
+                od funkcionalnog – da bude izraz individualnosti i kreativnosti.
               </p>
             </div>
             <div className="text-center mt-12">
@@ -59,7 +61,7 @@ export default async function Home() {
                 href="/o-meni"
                 className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
               >
-                Saznaj više o nama
+                Saznaj više o meni
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -87,8 +89,8 @@ export default async function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Majice</h3>
               <p className="text-gray-600 leading-relaxed">
-                Nosi svoju priču. Svaki dizajn je jedinstven i priča svoju
-                priču kroz boje, linije i emocije.
+                Nosi svoju priču. Svaki dizajn je jedinstven i priča svoju priču
+                kroz boje, linije i emocije.
               </p>
             </div>
 
@@ -124,7 +126,7 @@ export default async function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl"
             >
-              Istraži kolekciju
+              Istraži kolekciju na Zazzle
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -191,7 +193,8 @@ export default async function Home() {
                 Kategorije proizvoda
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Istraži različite kategorije i pronađi proizvode koji odgovaraju tvom stilu
+                Istraži različite kategorije i pronađi proizvode koji odgovaraju
+                tvom stilu
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -212,7 +215,8 @@ export default async function Home() {
                 Izdvojeni proizvodi
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Naši najpopularniji i najkreativniji dizajni – pažljivo odabrani za tebe
+                Naši najpopularniji i najkreativniji dizajni – pažljivo odabrani
+                za tebe
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
