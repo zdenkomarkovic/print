@@ -10,7 +10,8 @@
       "Bash(ping:*)",
       "Bash(timeout /t 2 /nobreak)",
       "Bash(node test-sanity.js:*)",
-      "Bash(del test-sanity.js)"
+      "Bash(del test-sanity.js)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://designer02store.com
+
+# Sitemaps
+Sitemap: https://designer02store.com/sitemap.xml
